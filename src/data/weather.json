@@ -1,0 +1,280 @@
+{
+    "North America": {
+        "Canada": {
+            "Ottawa": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Montreal": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Toronto": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Vancouver": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "United States of America": {
+            "New York": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Chicago": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Los Angeles": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "Mexico": {
+            "Mexico City": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Monterrey": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        }
+    },
+    "South America": {
+        "Brazil": {
+            "Sao Paulo": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Rio de Janeiro": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "Argentina": {
+            "Buenos Aires": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "Chile": {
+            "Santiago": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        }
+    },
+    "Africa": {
+        "Algeria": {
+            "Algiers": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "Nigeria": {
+            "Lagos": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "Cameroon": {
+            "Douala": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        }
+    },
+    "Europe": {
+        "Spain": {
+            "Madrid": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "Italy": {
+            "Rome": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Milan": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "Germany": {
+            "Berlin": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Frankfurt": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        }
+    },
+    "Asia": {
+        "India": {
+            "Mumbai": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Delhi": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "China": {
+            "Shanghai": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Beijing": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "Japan": {
+            "Tokyo": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        }
+    },
+    "Oceania": {
+        "Australia": {
+            "Sydney": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            },
+            "Melbourne": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        },
+        "New Zealand": {
+            "Auckland": {
+                "temperature": 28,
+                "additionalInfo": {
+                    "humidity": 35,
+                    "description": "Sunny",
+                    "pressure": 1016
+                }
+            }
+        }
+    }
+}

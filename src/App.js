@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import ExploreComponent from './components/explore/ExploreComponent';
+import AlertsComponent from './components/alerts/AlertsComponent';
+import MyNavbar from './components/mynavbar/MyNavbar';
+import HomeComponent from './components/home/HomeComponent';
+import HelpComponent from './components/help/HelpComponent';
+import SearchComponent from './components/search/SearchComponent';
+import NotFoundPageComponent from './components/notfound/NotFoundPageComponent';
+
+class App extends React.Component {
+
+    render() {
+        return (
+            <Router>
+                <div className="App">
+                    <MyNavbar></MyNavbar>
+                    <Switch>
+                        <Route path="/explore" exact component={ExploreComponent} />
+                        <Route path="/alerts" exact component={AlertsComponent} />
+                        <Route path="/help" exact component={HelpComponent} />
+                        <Route path="/search" exact component={SearchComponent} />
+                        <Route path="/" exact component={HomeComponent} />
+                        <Route path="*" component={NotFoundPageComponent} />
+                    </Switch>
+                </div>
+            </Router>
+        );
+    }
+
 }
 
 export default App;
