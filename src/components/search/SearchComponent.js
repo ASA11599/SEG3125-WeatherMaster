@@ -3,6 +3,10 @@ import React from 'react';
 import './SearchComponent.css';
 
 import weather from '../../data/weather.json';
+import CityInfoComponent from '../city/CityInfoComponent';
+
+import Accordion from 'react-bootstrap/Accordion';
+import Card from 'react-bootstrap/Card';
 
 class SearchComponent extends React.Component {
 
@@ -18,7 +22,11 @@ class SearchComponent extends React.Component {
         Object.keys(weather).forEach( (continent) => {
             Object.keys(weather[continent]).forEach( (country) => {
                 Object.keys(weather[continent][country]).forEach( (city) => {
-                    res.push(city);
+                    res.push({
+                        continent: continent,
+                        country: country,
+                        city: city
+                    });
                 } );
             } );
         } );
@@ -31,8 +39,8 @@ class SearchComponent extends React.Component {
 
     getSearchResults = () => {
         const q = this.getSearchQuery();
-        return this.state.cities.filter( (city) => {
-            return city.toLowerCase().includes( (q) ? (q.toLowerCase()) : ("") );
+        return this.state.cities.filter( (cityObject) => {
+            return cityObject["city"].toLowerCase().includes( (q) ? (q.toLowerCase()) : ("") );
         } );
     };
 
@@ -41,11 +49,24 @@ class SearchComponent extends React.Component {
             <div className="search page" >
                 <h1>Search results for "{this.getSearchQuery()}" </h1>
                 <br></br>
-                {
-                    this.getSearchResults().map( (city) => {
-                        return <p key={city} > {city} </p>
-                    } )
-                }
+                <Accordion>
+                    {
+                        this.getSearchResults().map( (cityObject, index) => {
+                            return (
+                                <Card key={cityObject["city"]} >
+                                    <Accordion.Toggle as={Card.Header} eventKey={index.toString()}>
+                                        { cityObject["city"] }
+                                    </Accordion.Toggle>
+                                    <Accordion.Collapse eventKey={index.toString()}>
+                                        <Card.Body>
+                                            <CityInfoComponent key={cityObject["city"]} city={cityObject["city"]} cityData={weather[cityObject["continent"]][cityObject["country"]][cityObject["city"]]}></CityInfoComponent>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                            )
+                        } )
+                    }
+                </Accordion>
             </div>
         );
     }

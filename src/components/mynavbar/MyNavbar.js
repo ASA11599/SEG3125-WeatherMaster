@@ -43,17 +43,13 @@ class MyNavbar extends React.Component {
                             </Link>
                         </Col>
                         </Nav>
-                        <Form inline>
-                            <Form.Group controlId="searchForm" >
-                                <Form.Control onChange={(e) => {this.setState({q: e.target.value})}} type="text" placeholder="Search for cities" />
-                            </Form.Group>
-                            <Link style={{color: "white", textDecoration: "none"}} className="link" to={{
-                                    pathname: "search",
-                                    city: this.state.q
-                                }} >
-                                    <Button className="search-button" ><i className="fas fa-search"></i></Button>
-                            </Link>
-                        </Form>
+                        <Form.Control style={{width: "30%"}} onChange={(e) => {this.setState({q: e.target.value})}} type="text" placeholder="Search for cities" />
+                        <Link style={{color: "white", textDecoration: "none"}} className="link" to={{
+                            pathname: "search",
+                            city: this.state.q
+                        }} >
+                            <Button className="search-button" ><i className="fas fa-search"></i></Button>
+                        </Link>
                     </Navbar.Collapse>
                 </Navbar>
             </div>

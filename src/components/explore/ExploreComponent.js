@@ -8,6 +8,8 @@ import Button from 'react-bootstrap/Button';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import ListGroup from 'react-bootstrap/ListGroup';
 
+import CityInfoComponent from '../city/CityInfoComponent';
+
 class ExploreComponent extends React.Component {
 
     constructor(props) {
@@ -70,10 +72,7 @@ class ExploreComponent extends React.Component {
                         }
                     </ListGroup>
                 ) : (
-                    <div>
-                        <p>this is weather data for {this.state.path[this.state.path.length - 1]} </p>
-                        <p> {JSON.stringify(this.state.currentView)} </p>
-                    </div>
+                    <CityInfoComponent city={this.state.path[this.state.path.length - 1]} cityData={this.state.currentView} ></CityInfoComponent>
                 )
             }
         </div>
